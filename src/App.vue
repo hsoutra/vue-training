@@ -12,6 +12,6 @@ import { ref } from "vue";
     <button @click="showModal = true">+</button>
   </header>
   <main>
-    {{ showModal ? "show modal" : "hide Modal" }}
+    {{ showModal ? "show modal" : "hide Modal jhhy" }}
   </main>
 </template>
