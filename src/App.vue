@@ -7,7 +7,7 @@ import { ref } from "vue";
 <template>
   <header>
     <h1>
-      Notes
+      this Notes title
     </h1>
     <button @click="showModal = true">+</button>
   </header>
