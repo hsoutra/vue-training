@@ -1,8 +1,9 @@
 <script setup>
 import { useCounterStore } from '@/stores/counter'
+import { ref } from 'vue';
 
 const counter = useCounterStore()
-
+const color = ref('')
 function logJSONData() {
   console.time('timer')
   fetch("https://jsonplaceholder.typicode.com/todos").then((res) => {
@@ -20,8 +21,15 @@ function logJSONData() {
     <br>
     <button @click="logJSONData">fetch data</button>
     <br>
-    <div>
-      {{ counter.data }}
+    <input type="text" v-model="color">   
+    <br>
+    <div class="text">
+      hello world
     </div>
   </main>
 </template>
+<style scoped>
+.text {
+  color: v-bind('color');
+}
+</style>
