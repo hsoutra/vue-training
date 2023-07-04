@@ -24,7 +24,7 @@ function logJSONData() {
     <input type="text" v-model="color">   
     <br>
     <div class="text">
-      hello world
+      hello world xx
     </div>
   </main>
 </template>
